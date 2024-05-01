@@ -9,7 +9,7 @@ The Flask application allows users to input features through a web form, which t
 ## Files
 
 - `app.py`: The Flask application script.
-- `index.html`: The HTML template for the web interface (not provided, assumed to be in the same directory).
+- `index.html`: The HTML template for the web interface.
 - `random_forest_model.pkl`: The trained Random Forest model used for making predictions.
 
 ## Setup
