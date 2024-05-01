@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Prediction</title>
+</head>
+<body>
+    <h2>Sales Prediction</h2>
+    <form action="/predict" method="POST">
+        Store: <input type="text" name="Store"><br>
+        DayOfWeek: <input type="text" name="DayOfWeek"><br>
+        Open: <input type="text" name="Open"><br>
+        Promo: <input type="text" name="Promo"><br>
+        SchoolHoliday: <input type="text" name="SchoolHoliday"><br>
+        CompetitionDistance: <input type="text" name="CompetitionDistance"><br>
+        CompetitionOpenSinceMonth: <input type="text" name="CompetitionOpenSinceMonth"><br>
+        CompetitionOpenSinceYear: <input type="text" name="CompetitionOpenSinceYear"><br>
+        Promo2: <input type="text" name="Promo2"><br>
+        Promo2SinceWeek: <input type="text" name="Promo2SinceWeek"><br>
+        Promo2SinceYear: <input type="text" name="Promo2SinceYear"><br>
+        Day: <input type="text" name="Day"><br>
+        Month: <input type="text" name="Month"><br>
+        Year: <input type="text" name="Year"><br>
+        StateHoliday_Christmas: <input type="text" name="StateHoliday_Christmas"><br>
+        StateHoliday_Easter Holiday: <input type="text" name="StateHoliday_Easter Holiday"><br>
+        StateHoliday_No Holiday: <input type="text" name="StateHoliday_No Holiday"><br>
+        StateHoliday_Public Holiday: <input type="text" name="StateHoliday_Public Holiday"><br>
+        StoreType_Type A: <input type="text" name="StoreType_Type A"><br>
+        StoreType_Type B: <input type="text" name="StoreType_Type B"><br>
+        StoreType_Type C: <input type="text" name="StoreType_Type C"><br>
+        StoreType_Type D: <input type="text" name="StoreType_Type D"><br>
+        Assortment_a: <input type="text" name="Assortment_a"><br>
+        Assortment_b: <input type="text" name="Assortment_b"><br>
+        Assortment_c: <input type="text" name="Assortment_c"><br>
+        PromoInterval_Feb_to_Nov: <input type="text" name="PromoInterval_Feb_to_Nov"><br>
+        PromoInterval_Jan_to_Oct: <input type="text" name="PromoInterval_Jan_to_Oct"><br>
+        PromoInterval_Mar_to_Dec: <input type="text" name="PromoInterval_Mar_to_Dec"><br>
+        PromoInterval_NOTHING: <input type="text" name="PromoInterval_NOTHING"><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
